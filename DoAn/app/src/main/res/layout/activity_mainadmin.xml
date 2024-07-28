@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/dr_mn"
+    android:fitsSystemWindows="true"
+    tools:context=".ListRoomActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/activity_main_context"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnThongKe"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add_chart_24"
+            android:padding="5dp"
+            android:layout_marginTop="590dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_admin2"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_admin2"
+        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

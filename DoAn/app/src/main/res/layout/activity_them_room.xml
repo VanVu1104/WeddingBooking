@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#CDB891"
+        app:title="DIAMOND">
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:layout_marginLeft="270dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Ảnh:"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/anhroom"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            android:hint="Link ảnh"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:scrollHorizontally="false"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Tên sảnh:"/>
+
+        <EditText
+            android:id="@+id/tenroom"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:scrollHorizontally="false"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            android:hint="Tên sảnh"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Giá:"/>
+
+        <EditText
+            android:id="@+id/giaroom"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:scrollHorizontally="false"
+            android:hint="Giá"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Mô tả:"/>
+
+        <EditText
+            android:id="@+id/motaroom"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            android:hint="Mô tả"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:scrollHorizontally="false"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:"/>
+
+        <EditText
+            android:id="@+id/slroom"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            android:hint="Số lượng khách"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:scrollHorizontally="false"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taoroom"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:background="@drawable/btn"
+            android:layout_height="60dp"
+            android:text="Tạo "/>
+    </LinearLayout>
+</LinearLayout>

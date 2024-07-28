@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="@drawable/thydo"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Tên khách hàng:"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tenkh"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Khách Hàng" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Số điện thoại:"
+                android:textColor="@color/black"                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+
+                android:id="@+id/sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Số Điện Thoại" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Loại sảnh:"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+
+                android:id="@+id/loaisanh"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại Sảnh" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Ngày đặt:"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Ngày" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Số lượng khách:"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/slk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Số Lượng Khách" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Giờ tổ chức:"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/selectedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Giờ" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/btnxacnhan"
+            android:id="@+id/confirmButton"
+            android:layout_width="150dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Xác Nhận" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/btndel"
+                android:id="@+id/delButton"
+                android:layout_width="150dp"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:text="Hủy yêu cầu" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taohopdong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo hợp đồng"
+            android:visibility="gone"
+            android:background="@drawable/btndel"
+            />
+    </LinearLayout>
+</LinearLayout>

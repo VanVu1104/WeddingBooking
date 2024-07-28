@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAFW0S8hBsJv6JUcxjWzWBslQT44NkDei4" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Doandiamond"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.Quanly.ListBillActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.Quanly.ContractPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.ListContractActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FavoriteListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="true"
+            android:label="Merchant Demo"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".paymentActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.TrangthaiSanhActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.AddContactActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.ServiceConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.StaticActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.NhanvienActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.DetailDVActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.DichVuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CapnhatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.ThemRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.RoomAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dichvu.UpdateRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.HopdongActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.MainadminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.QuanLySanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.AdminConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userotpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.loginsdtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dndkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userdnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailDishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllDishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Location2Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DattiecActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Quanly.dangnhapActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.loginotpActivity"
+            android:exported="false" />
+        <activity
+
+            android:name=".splashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThucDonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAFW0S8hBsJv6JUcxjWzWBslQT44NkDei4" />
+    </application>
+
+</manifest>
+

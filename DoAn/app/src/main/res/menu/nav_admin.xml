@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/mn_xnyc"
+            android:title="Xác nhận yêu cầu đặt tiệc"
+            android:icon="@drawable/ic_xn"/>
+        <item
+            android:id="@+id/mn_taohd"
+            android:title="Danh sách hợp đồng yêu cầu đặt tiệc"
+            android:icon="@drawable/ic_taohd"/>
+        <item
+            android:id="@+id/mn_bill"
+            android:title="Danh sách hóa đơn"
+            android:icon="@drawable/ic_gyc"/>
+        <item
+            android:id="@+id/trangthai"
+            android:title="Lịch sảnh"
+            android:icon="@drawable/ic_xsanh"/>
+        <item
+            android:id="@+id/mn_static"
+            android:title="Thống kê"
+            android:icon="@drawable/ic_chart"/>
+        <item
+            android:id="@+id/mn_logout"
+            android:title="Đăng xuất"
+            android:icon="@drawable/ic_logout"/>
+
+    </group>
+</menu>

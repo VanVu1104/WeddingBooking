@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/dr_mn"
+    android:fitsSystemWindows="true"
+    tools:context=".DattiecActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/activity_main_context"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi Yêu Cầu Đặt Tiệc"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên khách hàng:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/tenkhach"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Nhập tên..."
+                    android:inputType="text"
+                    android:textSize="17sp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtSDT"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Nhập số điện thoại..."
+                    android:inputType="number"
+                    android:textSize="17sp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày đặt tiệc:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/ngay"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Chọn ngày đặt tiệc... "
+                    android:inputType="text"
+                    android:textSize="17sp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Số lượng khách:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/slk"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Nhập số lượng khách..."
+                    android:inputType="number"
+                    android:textSize="17sp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Loại sảnh:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/sanh"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="120dp"
+                    android:text="Giờ: "
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/btn_bkgr"
+                    android:id="@+id/btnthemtd"
+                    android:text="Thêm thực đơn"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/btn_bkgr"
+                    android:id="@+id/btnthemdv"
+                    android:text="Thêm dịch vụ"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/btn"
+                android:id="@+id/gui"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gửi Yêu Cầu "/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_mn"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

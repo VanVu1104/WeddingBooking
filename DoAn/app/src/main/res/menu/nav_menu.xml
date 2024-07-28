@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/mn_xacnhan"
+            android:title="Trang chủ"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/mn_dichvu"
+            android:title="Dịch vụ"
+            android:icon="@drawable/ic_dv"/>
+        <item
+            android:id="@+id/mn_sanh"
+            android:title="Xem sảnh"
+            android:icon="@drawable/ic_xsanh"/>
+        <item
+            android:id="@+id/mn_thucdon"
+            android:title="Xem thực đơn"
+            android:icon="@drawable/ic_td"/>
+        <item
+            android:id="@+id/mn_updatett"
+            android:title="Cập nhật thông tin"
+            android:icon="@drawable/ic_cntt"/>
+        <item
+            android:id="@+id/mn_ycdt"
+            android:title="Gửi yêu cầu đặt tiệc"
+            android:icon="@drawable/ic_gyc"/>
+        <item
+            android:id="@+id/mn_history"
+            android:title="Xem danh sách yêu cầu"
+            android:icon="@drawable/ic_gyc"/>
+        <item
+            android:id="@+id/mn_dn"
+            android:title="Đăng nhập"
+            android:icon="@drawable/ic_login"/>
+        <item
+            android:id="@+id/mn_logout"
+            android:title="Đăng xuất"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>
